@@ -37,10 +37,10 @@ nav .nav-link{
 .poster{
     position: relative;
     overflow: hidden;
-    margin: 0% 5% 0%;
+    margin: 0% 0% 0%;
 }
 .title .image-container{
-    width: 70%;
+    width: 50%;
     margin-top: 7%;
     margin-left: 2%;
 }
@@ -50,7 +50,7 @@ nav .nav-link{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    position: absolute;
+    position: relative;
     left: 60%;
     top: 12%;
 
@@ -109,7 +109,7 @@ nav .nav-link{
 }
 #features .ftr-img-l{
     flex-direction: row-reverse;
-    background-color: #cadee3;      /* here */
+    background-color: #FFE3A4;      /* here */
 }
 #features .ftr .text-content{
     width: 30%;
@@ -120,7 +120,7 @@ nav .nav-link{
     background-color: transparent;
 }
 #features h1{
-    font-size: 4rem;
+    font-size: 3rem;
 }
 #features p{
     font-size: 1.3rem;
@@ -137,7 +137,7 @@ nav .nav-link{
 #features .ftr-img-l h1,
 #features .ftr-img-l p,
 #features .ftr-img-l .text-content{
-    background-color: #cadee3;          /*here*/
+    background-color: #FFE3A4;          /*here*/
 }
 
 /* testimonials */
@@ -221,7 +221,7 @@ nav .nav-link{
     align-items: center;
 }
 #download h1{
-    font-size: 3.2rem;
+    font-size: 2.5rem;
     line-height: 4rem;
     font-weight: 800;
     font-family: 'Karla', sans-serif;
@@ -320,7 +320,7 @@ footer .design p{
     }
     .title .image-container{
         display: flex;
-        width: 100%;
+        width: 80%;
         margin-top: 12%;
         margin-left: 5%;
     }
@@ -454,7 +454,6 @@ footer .design p{
         font-size: 0.9rem;
     }
 }
-
 
 /* tab */
 @media only screen and (min-width: 780px){
@@ -640,9 +639,22 @@ footer .design p{
     .title p{
         font-size: 1.2rem;
     }
-    .title .image-container{
+    .title .image-container {
+        width: 70%;
         margin-top: 6%;
     }
+
+    .title .image-container img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .title .title-content {
+        width: 30%;
+        left: 2.5%;
+    }
+
     .poster-image{
         top: -120%;
         left: -20%;
