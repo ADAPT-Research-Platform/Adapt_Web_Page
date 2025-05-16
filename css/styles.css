@@ -1,0 +1,847 @@
+*{
+    color: #092C4C;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+body .container{
+    width: 100%; 
+    max-width: 100%; 
+    box-sizing: border-box; 
+    padding: 0;
+}
+body .container h1{
+    font-weight: 600;
+}
+body .container p{
+    padding-top: 1%;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+/* navbar */
+nav .nav-link{
+    font-size: 1rem;  
+    color: gray;    
+}
+
+/* title */
+.title{
+    display: flex;
+    flex-direction: row;
+}
+.poster{
+    position: relative;
+    overflow: hidden;
+    margin: 0% 5% 0%;
+}
+.title .image-container{
+    width: 70%;
+    margin-top: 7%;
+    margin-left: 2%;
+}
+.title .title-content{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    left: 60%;
+    top: 12%;
+
+}
+.poster-image{
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 40%;
+    width: 40%;
+    background-size: cover;
+    top: -100%;
+    left: -10%;
+    z-index: -1;
+}
+.title .head{
+    text-align: left;
+}
+.title h1{
+    
+    font-size: 4.5rem;
+}
+.title p{
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+
+/* download button */
+.download-btn{
+    display: flex;
+    gap: 2%;
+    justify-content: center; 
+    align-items: center;
+    padding-top: 2%;
+}
+.download-btn .btn{
+    padding-left: 0%;
+}
+.download-btn .btn img{
+    height: 9vh;
+}
+
+/* features */
+#features{
+    margin: 0%;
+}
+#features .container{
+    padding: 0%;
+}
+#features .ftr{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 5%;
+    padding: 0%;
+    height: 90vh;
+}
+#features .ftr-img-l{
+    flex-direction: row-reverse;
+    background-color: #cadee3;      /* here */
+}
+#features .ftr .text-content{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+#features .ftr .image-content{
+    background-color: transparent;
+}
+#features h1{
+    font-size: 4rem;
+}
+#features p{
+    font-size: 1.3rem;
+}
+#features .subP{
+    font-size: 1rem;
+    color: gray;
+}
+#features img{
+    height: 80vh;
+    object-fit: cover;
+}
+#features .ftr-img-l img,
+#features .ftr-img-l h1,
+#features .ftr-img-l p,
+#features .ftr-img-l .text-content{
+    background-color: #cadee3;          /*here*/
+}
+
+/* testimonials */
+#testimonials{
+    margin: 0% 5% 0%;
+}
+#testimonials .container{
+    height: 100%;
+    width: 80%;
+}
+#testimonials h1{
+    font-size: 3rem;
+}
+#testimonials .head p{
+    font-size: 1.3rem;
+}
+#testimonials .carousel  .carousel-inner{
+    display: flex;
+    height: 45vh;
+}
+#testimonials .carousel  .carousel-item{
+    height: 100%;
+}
+#testimonials  .feedback{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 2%;
+}
+#testimonials .feedback-content{
+    width: 50%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 2% 2%;
+}
+#testimonials .profile-pic {
+    padding: 2% 0%;
+  }
+#testimonials .profile-pic img{
+    height: 30vh;
+    border-radius: 50%;
+}
+#testimonials .feedback-content .fa-quote-left{
+    color: #566370;
+    font-size: 2rem;
+    align-self: flex-start;
+}
+#testimonials .control-icon{
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #1f65a5;
+    border-radius: 50%;
+    top: 35%;
+}
+#testimonials .feedback-content p{
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+#testimonials h6{
+    font-size: 1rem; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+
+/* download */
+#download{
+    margin: 0% 0% 3%;
+}
+#download .container{
+    /* background-color: #cadee3; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#download h1{
+    font-size: 3.2rem;
+    line-height: 4rem;
+    font-weight: 800;
+    font-family: 'Karla', sans-serif;
+}
+#download p{
+    font-size: 1.1rem;
+    color: gray;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+}
+#download .dwnld-txt{
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+#download .download-btn .btn img{
+    height: 10vh;
+}
+
+
+/* footer */
+footer .footer-content{
+    display: flex;
+    gap: 20%;
+    justify-content: center;
+    align-items: center;
+}
+footer .cpy p{
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: gray;
+}
+footer .cpy a{
+    font-weight: 600;
+    color: #092C4C;
+    font-size: 1.2rem;
+}
+footer .social-media{
+    display: flex;
+    gap: 30px;
+    margin: 0%;
+    align-items: baseline;
+}
+footer .social-media i{
+    font-size: 25px;
+    color: #475D6F;
+}
+footer .social-media i:hover{
+    color: #092C4C;
+}
+footer .social-media a{
+    color: #1b3f62;
+    font-weight: 500;
+}
+footer .design a{
+    color: #152433;
+    font-weight: 500;
+    font-size: 1rem;
+}
+footer .design p{
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE DESIGN */
+/* mobile phone #cadee3*/
+
+@media only screen and (min-width: 320px) {
+    /* navbar */
+    nav .navbar-toggler{
+        font-size: 0.8rem;
+    }
+    nav .nav-link{
+        font-size: 0.7rem;       
+    }
+    .navbar-brand img{
+        height: 4vh;
+    }
+
+    /* title */
+    .title{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .title h1{
+        font-size: 2.5rem;
+    }
+    .title p{
+        font-size: 0.9rem;
+    }
+    .title .image-container{
+        display: flex;
+        width: 100%;
+        margin-top: 12%;
+        margin-left: 5%;
+    }
+    .title .title-content{
+        position: relative;
+        width: 80%;
+        align-items: center;
+        left: 0%;
+        bottom: 0%;
+    
+    }
+    .poster-image{
+        height: auto;
+        width: auto;
+        top: -225%;
+        left: -200%;
+    }
+    /* download button */
+    .download-btn{
+        gap: 1%;
+    }
+    .download-btn .btn{
+        padding-left: 2%;
+    }
+    .download-btn .btn img{
+        height: 6vh;
+    } 
+
+    /* features */
+    #features .ftr{
+        flex-direction: column;
+        gap: 3%;
+        height: 100vh;
+    }
+    #features .ftr .text-content{
+        width: 80%;
+        margin-bottom:5%;
+    }
+    #features h1{
+        font-size: 2rem;
+    }
+    #features p{
+        font-size: 0.8rem;
+    }
+    #features .subP{
+        font-size: 0.8rem;
+    }
+    #features img{
+        height: 60vh;
+    }
+
+    /* testimonials */
+    #testimonials h1{
+        font-size: 1.5rem;
+    }
+    #testimonials .head p{
+        font-size: 0.8rem;
+    }
+    #testimonials .carousel  .carousel-inner{
+        height: 60vh;
+    }
+    #testimonials  .feedback{
+        flex-direction: column;
+    }
+    #testimonials .control-icon{
+        height: 30px;
+        width: 30px;
+        font-size: 0.3rem;
+        top: 15%;
+    }
+    #testimonials .feedback-content{
+        width: 90%;
+    }
+    #testimonials .feedback-content p{
+        font-size: 0.8rem;
+        width: 100%; 
+    }
+    #testimonials .feedback-content .fa-quote-left{
+        font-size: 1.5rem;
+    }
+    #testimonials .profile-pic img{
+        height: 20vh;
+    }
+
+    /* download */
+    #download .dwnld-txt{
+        width: 80%;
+    }
+    #download h1{
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+    }
+    #download p{
+        font-size: 0.7rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+    #download .download-btn .btn img{
+        height: 6vh;
+    }
+
+    /* footer */
+    footer .footer-content{
+        flex-direction: column;
+    }
+    footer .social-media{
+        width: 80%;
+        gap: 0%;
+        justify-content: space-around;
+    }
+    footer .social-media i{
+        font-size: 1.2rem;
+    }
+    footer .cpy a{
+        font-size: 1.1rem;
+    }
+    footer .cpy p{
+        font-size: 0.8rem;
+        margin-bottom: 1%;
+    }
+    footer .social-media a{
+        font-size: 0.8rem;
+    }
+    footer .social-media p{
+        margin-bottom: 0;
+    }
+    footer .design a{
+        font-size: 0.8rem;
+    }
+    footer .design p{
+        font-size: 0.9rem;
+    }
+}
+
+
+/* tab */
+@media only screen and (min-width: 780px){
+    /* navbar */
+    nav .navbar-toggler{
+        font-size: 1rem;
+    }
+    nav .nav-link{
+        font-size: 0.9rem;       
+    }
+    .navbar-brand img{
+        height: 5vh;
+    }
+    /* title */
+    .title{
+        flex-direction: row;
+    }
+    .title h1{
+        font-size: 3rem;
+    }
+    .title p{
+        font-size: 0.9rem;
+    }
+    .title .image-container{
+        margin-top: 10%;
+        margin-left: 2%;
+    }
+    .title .title-content{
+        width: 40%;
+        align-self: normal;
+        align-items: flex-start;
+        left: -5%;
+    
+    }
+    .poster-image{
+        top: -230%;
+        left: -80%;
+    }
+    /* download button */
+    .download-btn{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .download-btn .btn img{
+        height: 7vh;
+    } 
+
+
+    /* features */
+    #features .ftr{
+        height: 120vh;
+        align-self: center;
+    }
+    #features .ftr .text-content{
+        width: 50%;
+        margin-bottom: 3%;
+    }
+    #features h1{
+        font-size: 3rem;
+        line-height: 2.7rem;
+    }
+    #features p{
+        font-size: 1rem;
+    }
+    #features .subP{
+        font-size: 0.8rem;
+    }
+    #features img{
+        height: 75vh;
+    }
+
+
+    /* testimonials */
+    #testimonials .container{
+        width: 90%;
+    }
+    #testimonials h1{
+        font-size: 2rem;
+    }
+    #testimonials .head p{
+        font-size: 1rem;
+    }
+    #testimonials .carousel  .carousel-inner{
+        height: 40vh;
+    }
+    #testimonials .control-icon{
+        height: 40px;
+        width: 40px;
+        top: 35%;
+    }
+    #testimonials .feedback-content{
+        width: 60%;
+    }
+    #testimonials  .feedback{
+        flex-direction: row;
+    }
+    #testimonials .feedback-content .fa-quote-left{
+        font-size: 2rem;
+    }
+    #testimonials .feedback-content p{
+        font-size: 0.9rem;
+    }
+    #testimonials h6{
+        font-size: 1.2rem; 
+    }
+    #testimonials .profile-pic img{
+        height: 23vh;
+    }
+
+
+    /* download */
+    #download .dwnld-txt{
+        width: 90%;
+    }
+    #download h1{
+        font-size: 2.5rem;
+        line-height: 2.8rem;
+    }
+    #download p{
+        font-size: 0.9rem;
+        font-weight: 600;
+        letter-spacing: 4px;
+    }
+    #download .download-btn{
+        flex-direction: row;
+    }
+    #download .download-btn .btn img{
+        height: 8vh;
+    }
+
+    /* footer */
+    footer{
+        margin: 0% 0% 3%;
+    }
+    footer .footer-content{
+        flex-direction: row;
+        gap: 0%;
+    }
+    footer .social-media{
+        width: 40%;
+        gap: 5%;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .social-media i{
+        font-size: 1.3rem;
+    }
+    footer .social-media p{
+        margin-bottom: 2%;
+    }
+    footer .cpy a{
+        font-size: 1.2rem;
+    }
+    .footer-content p{
+        font-size: 1rem;
+    }
+    footer .design a{
+        font-size: 1rem;
+    }
+    footer .design p{
+        font-size: 0.9rem;
+        margin-bottom: 0%;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 1280px) {
+    /* navbar */
+    nav .navbar-toggler{
+        font-size: 2rem;
+    }
+    nav .nav-link{
+        font-size: 1rem;       
+    }
+    .navbar-brand img{
+        height: 6vh;
+    }
+
+    /* title */
+    .title h1{
+        font-size: 4rem;
+    }
+    .title p{
+        font-size: 1.2rem;
+    }
+    .title .image-container{
+        margin-top: 6%;
+    }
+    .poster-image{
+        top: -120%;
+        left: -20%;
+    }
+    /* download button */
+    .download-btn .btn img{
+        height: 8vh;
+        margin-top: 5%;
+    }
+
+
+    /* features */
+    #features .container{
+        justify-content: center;
+        align-items: center;
+    }
+    #features .ftr{
+        height: 90vh;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        gap: 3%;
+    }
+    #features .ftr-img-l{
+        flex-direction: row-reverse;
+    }
+    #features .ftr .text-content{
+        width: 30%;
+        margin-bottom: 5%;
+    }
+    #features h1{
+        font-size: 3.3rem;
+        line-height: 3rem;
+    }
+    #features p{
+        font-size: 1.3rem;
+    }
+    #features .subP{
+        font-size: 1.1rem;
+    }
+
+
+    /* testimonials */
+    #testimonials .container{
+        width: 80%;
+    }
+    #testimonials h1{
+        font-size: 3rem;
+    }
+    #testimonials .head p{
+        font-size: 1.2rem;
+    }
+    #testimonials .control-icon{
+        height: 50px;
+        width: 50px;
+        top: 30%;
+    }
+    #testimonials .feedback-content{
+        width: 50%;
+    }
+    #testimonials .feedback-content .fa-quote-left{
+        font-size: 2.1rem;
+    }
+    #testimonials .feedback-content p{
+        font-size: 1.2rem;
+    }
+    #testimonials h6{
+        font-size: 1.5rem; 
+    }
+    #testimonials .profile-pic img{
+        height: 30vh;
+    }
+
+    /* download */
+    #download .dwnld-txt{
+        width: 60%;
+    }
+    #download h1{
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+    #download p{
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    #download .download-btn .btn img{
+        height: 9vh;
+    }
+
+
+    /* footer */
+    footer{
+        margin: 0% 0% 2%;
+    }
+    footer .footer-content{
+        gap: 8%;
+    }
+    footer .social-media i{
+        font-size: 1.5rem;
+    }
+    footer .social-media a{
+        font-size: 1rem;
+    }
+    footer .cpy a{
+        font-size: 1.3rem;
+    }
+    footer .cpy p{
+        font-size: 1rem;
+    }
+    .footer-content p{
+        font-size: 1.3rem;
+    }
+    footer .design a{
+        font-size: 1.2rem;
+    }
+    footer .design p{
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    /* navbar */
+    nav .nav-link{
+        font-size: 1.1rem;       
+    }
+    .navbar-brand img{
+        height: 6.5vh;
+    }
+
+    /* title */
+    .title h1{
+        font-size: 4.7rem;
+    }
+    .title p{
+        font-size: 1.3rem;
+    }
+    .title .image-container{
+        margin-top: 5%;
+    }
+    .poster-image{
+        top: -110%;
+        left: -10%;
+    }
+    /* download button */
+    .download-btn{
+        flex-direction: row;
+    }
+
+
+    /* features */
+    #features h1{
+        font-size: 3.8rem;
+        line-height: 3.5rem;
+    }
+    #features p{
+        font-size: 1.4rem;
+    }
+    #features .subP{
+        font-size: 1.2rem;
+    }
+
+    /* testimonials */
+    #testimonials h1{
+        font-size: 3.5rem;
+    }
+    #testimonials .carousel  .carousel-inner{
+        height: 45vh;
+    }
+    #testimonials .control-icon{
+        height: 46px;
+        width: 46px;
+        top: 35%;
+    }
+    #testimonials .feedback-content p{
+        font-size: 1.3rem;
+    }
+    #testimonials .feedback-content .fa-quote-left{
+        font-size: 2.2rem;
+    }
+    #testimonials h6{
+        font-size: 1.7rem; 
+    }
+
+    /* download*/
+    #download h1{
+        font-size: 3.2rem;
+        line-height: 4rem;
+    }
+
+
+    /* footer */
+    footer{
+        margin: 0% 0% 1%;
+    }
+    footer .social-media a{
+        font-size: 1.2rem;
+    }
+    footer .cpy a{
+        font-size: 1.5rem;
+    }
+}
