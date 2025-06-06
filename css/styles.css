@@ -470,23 +470,29 @@ footer .design p{
     /* title */
     .title{
         flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2%;
+        padding-top: 7vh; /* Push text below the header */
     }
     .title h1{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .title p{
         font-size: 0.9rem;
     }
     .title .image-container{
-        margin-top: 10%;
+        width: 50%;
+        margin-top: 2%;
         margin-left: 2%;
     }
     .title .title-content{
-        width: 40%;
-        align-self: normal;
-        align-items: flex-start;
-        left: -5%;
-    
+        width: 45%;
+        position: relative;
+        left: 0;
+        top: 0;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        padding-top: 2rem;
     }
     .poster-image{
         top: -230%;
@@ -632,16 +638,23 @@ footer .design p{
         height: 6vh;
     }
 
+    .title {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2%;
+        padding-top: 8vh;
+    }
+
     /* title */
     .title h1{
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     .title p{
         font-size: 1.2rem;
     }
     .title .image-container {
-        width: 70%;
-        margin-top: 6%;
+        width: 50%;
+        margin-top: 3%;
     }
 
     .title .image-container img {
@@ -651,8 +664,13 @@ footer .design p{
     }
 
     .title .title-content {
-        width: 30%;
-        left: 2.5%;
+        width: 45%;
+        position: relative;
+        left: 0;
+        top: 0;
+        padding-top: 2rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
     .poster-image{
@@ -786,15 +804,34 @@ footer .design p{
     }
 
     /* title */
+    .title {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2%;
+        padding-top: 8vh;
+    }
+
     .title h1{
-        font-size: 4.7rem;
+        font-size: 3.5rem;
     }
     .title p{
         font-size: 1.3rem;
     }
     .title .image-container{
+        width: 50%;
         margin-top: 5%;
     }
+
+    .title .title-content {
+        width: 45%;
+        position: relative;
+        left: 0;
+        top: 0;
+        padding-top: 2rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
     .poster-image{
         top: -110%;
         left: -10%;
