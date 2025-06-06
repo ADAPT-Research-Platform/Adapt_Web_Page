@@ -39,6 +39,7 @@ nav .nav-link{
     position: relative;
     overflow: hidden;
     margin: 0% 0% 0%;
+    padding-top: 80px;
 }
 .title .image-container{
     width: 50%;
@@ -631,6 +632,17 @@ footer .design p{
     }
 
     /* title */
+    /* Ensure .title itself is a flex container, if not already set in base */
+    /* .title { */
+        /* display: flex; */ /* Already in base */
+        /* flex-direction: row; */ /* Already in base */
+        /* align-items: flex-start; */ /* Default or from base, change as needed */
+    /* } */
+    .title{ /* Targeting .title within the media query for specific overrides */
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
     .title h1{
         font-size: 3.5rem;
     }
@@ -640,9 +652,10 @@ footer .design p{
     .title .image-container {
         width: 35%;
         margin-top: 0;
-        position: absolute;
-        bottom: 0;
-        right: 0;
+        position: static; /* Changed from absolute */
+        /* bottom: 0; Removed */
+        /* right: 0; Removed */
+        order: 2; /* Added */
     }
 
     .title .image-container img {
@@ -653,8 +666,10 @@ footer .design p{
 
     .title .title-content {
         width: 60%;
-        padding-right: 2%;
-        /* position: static; */ /* Overrides base if needed, but image is relative to .title */
+        /* padding-right: 2%; Removed */
+        order: 1; /* Added */
+        /* Ensure position is not absolute if it was set before, should flow naturally */
+        /* position: static; */ /* Base is relative, which is fine. No desktop specific position needed. */
     }
 
     .poster-image{
