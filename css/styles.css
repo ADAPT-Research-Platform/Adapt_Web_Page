@@ -33,6 +33,7 @@ nav .nav-link{
 .title{
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 .poster{
     position: relative;
@@ -46,13 +47,11 @@ nav .nav-link{
 }
 .title .title-content{
     display: flex;
-    width: 30%;
+    width: auto;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     position: relative;
-    left: 60%;
-    top: 12%;
 
 }
 .poster-image{
@@ -485,7 +484,6 @@ footer .design p{
         width: 40%;
         align-self: normal;
         align-items: flex-start;
-        left: -5%;
     
     }
     .poster-image{
@@ -634,25 +632,29 @@ footer .design p{
 
     /* title */
     .title h1{
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     .title p{
         font-size: 1.2rem;
     }
     .title .image-container {
-        width: 70%;
-        margin-top: 6%;
+        width: 35%;
+        margin-top: 0;
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 
     .title .image-container img {
         width: 100%;
-        height: auto;
+        height: 100%;
         object-fit: contain;
     }
 
     .title .title-content {
-        width: 30%;
-        left: 2.5%;
+        width: 60%;
+        padding-right: 2%;
+        /* position: static; */ /* Overrides base if needed, but image is relative to .title */
     }
 
     .poster-image{
