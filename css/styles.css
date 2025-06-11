@@ -93,9 +93,10 @@ nav .nav-link{
 }
 
 /* Study Section */
-#study {
+.study {
     padding: 0% 10%;
     text-align: left;
+    font-size: 1.3rem;
 }
 
 /* features */
@@ -743,7 +744,6 @@ footer .design p{
     #features .subP{
         font-size: 1.1rem;
     }
-
 
     /* testimonials */
     #testimonials .container{
