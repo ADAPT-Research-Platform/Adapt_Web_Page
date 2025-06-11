@@ -93,7 +93,7 @@ nav .nav-link{
 }
 
 /* Study Section */
-.study {
+#study {
     padding: 0% 10%;
     text-align: left;
 }
@@ -111,12 +111,13 @@ nav .nav-link{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 4%;
-    padding: 5% 2%;
+    gap: 0%;
+    padding: 0 2%;
     height: auto;
     min-height: 80vh;
     box-sizing: border-box;
 }
+
 #features .ftr-img-l{
     flex-direction: row-reverse;
     background-color: #e9f38f;      /* here */
@@ -244,6 +245,7 @@ nav .nav-link{
     font-family: 'Product Sans', sans-serif;
 }
 #download .dwnld-txt{
+    margin-top: 5%;
     width: 60%;
     text-align: center;
     display: flex;
@@ -332,10 +334,13 @@ footer .design p{
         align-items: center;
     }
     .title h1{
-        font-size: 2.5rem;
+        font-size: 1.5rem;
+    }
+    .title h2{
+        font-size: 1.2rem;
     }
     .title p{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
     .title .image-container{
         display: flex;
@@ -357,6 +362,7 @@ footer .design p{
         top: -225%;
         left: -200%;
     }
+
     /* download button */
     .download-btn{
         gap: 1%;
@@ -366,7 +372,7 @@ footer .design p{
     }
     .download-btn .btn img{
         height: 6vh;
-    } 
+    }
 
     /* features */
     #features .ftr{
@@ -380,7 +386,10 @@ footer .design p{
         margin-bottom:5%;
     }
     #features h1{
-        font-size: 2rem;
+        font-size: 2.2rem;
+    }
+    #features h2{
+        font-size: 1.2rem;
     }
     #features p{
         font-size: 0.8rem;
@@ -539,6 +548,9 @@ footer .design p{
     #features h1{
         font-size: 3rem;
         line-height: 2.7rem;
+    }
+    #features h2{
+        font-size: 2rem;
     }
     #features p{
         font-size: 1rem;
@@ -722,6 +734,9 @@ footer .design p{
         font-size: 3.3rem;
         line-height: 3rem;
     }
+    #features h2{
+        font-size: 2.3rem;
+    }
     #features p{
         font-size: 1.3rem;
     }
@@ -860,13 +875,18 @@ footer .design p{
     #features .ftr {
         padding: 4% 8%;
     }
-    #features .ftr .text-content,
+    #features .ftr .text-content{
+
+    }
     #features .ftr .image-container {
         width: 35%;
     }
     #features h1{
         font-size: 3.8rem;
         line-height: 3.5rem;
+    }
+    #features h2{
+        font-size: 2.8rem;
     }
     #features p{
         font-size: 1.4rem;
@@ -895,6 +915,10 @@ footer .design p{
     }
     #testimonials h6{
         font-size: 1.7rem; 
+    }
+
+    #download .dwnld-txt{
+        width: 75%;
     }
 
     /* download*/
