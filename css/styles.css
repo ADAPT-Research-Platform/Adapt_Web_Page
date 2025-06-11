@@ -92,32 +92,41 @@ nav .nav-link{
     height: 9vh;
 }
 
+/* Study Section */
+.study {
+    padding: 0% 10%;
+    text-align: left;
+}
+
 /* features */
 #features{
     margin: 0%;
 }
 #features .container{
     padding: 0%;
+    overflow: hidden;
 }
-#features .ftr{
+#features .ftr {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    display: flex;
-    gap: 5%;
-    padding: 0%;
-    height: 90vh;
+    gap: 4%;
+    padding: 5% 2%;
+    height: auto;
+    min-height: 80vh;
+    box-sizing: border-box;
 }
 #features .ftr-img-l{
     flex-direction: row-reverse;
     background-color: #FFE3A4;      /* here */
 }
-#features .ftr .text-content{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-}
-#features .ftr .image-content{
-    background-color: transparent;
+#features .ftr .text-content,
+#features .ftr .image-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 #features h1{
     font-size: 3rem;
@@ -230,7 +239,7 @@ nav .nav-link{
     font-size: 1.1rem;
     color: gray;
     font-weight: 600;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     padding: 0;
     font-family: 'Karla', sans-serif;
 }
@@ -254,6 +263,16 @@ footer .footer-content{
     gap: 20%;
     justify-content: center;
     align-items: center;
+}
+footer .footer-contact {
+    font-size: 0.9rem;
+    color: #525252;
+    line-height: 1.6;
+    padding: 0% 10%;
+}
+footer .footer-contact a {
+    color: #404040;
+    font-weight: 500;
 }
 footer .cpy p{
     font-size: 0.8rem;
@@ -303,7 +322,7 @@ footer .design p{
         font-size: 0.7rem;       
     }
     .navbar-brand img{
-        height: 4vh;
+        height: 3vh;
     }
 
     /* title */
@@ -343,7 +362,7 @@ footer .design p{
         gap: 1%;
     }
     .download-btn .btn{
-        padding-left: 2%;
+        padding-left: 0%;
     }
     .download-btn .btn img{
         height: 6vh;
@@ -355,6 +374,7 @@ footer .design p{
         gap: 3%;
         height: 100vh;
     }
+
     #features .ftr .text-content{
         width: 80%;
         margin-bottom:5%;
@@ -415,8 +435,8 @@ footer .design p{
     }
     #download p{
         font-size: 0.7rem;
-        font-weight: 600;
-        letter-spacing: 2px;
+        font-weight: 450;
+        letter-spacing: 1px;
     }
     #download .download-btn .btn img{
         height: 6vh;
@@ -509,13 +529,12 @@ footer .design p{
 
 
     /* features */
-    #features .ftr{
-        height: 120vh;
-        align-self: center;
+    #features .ftr {
+        flex-direction: row;
     }
-    #features .ftr .text-content{
-        width: 50%;
-        margin-bottom: 3%;
+    #features .ftr .text-content,
+    #features .ftr .image-container {
+        width: 45%;
     }
     #features h1{
         font-size: 3rem;
@@ -580,8 +599,8 @@ footer .design p{
     }
     #download p{
         font-size: 0.9rem;
-        font-weight: 600;
-        letter-spacing: 4px;
+        font-weight: 450;
+        letter-spacing: 1px;
     }
     #download .download-btn{
         flex-direction: row;
@@ -689,20 +708,15 @@ footer .design p{
         justify-content: center;
         align-items: center;
     }
-    #features .ftr{
-        height: 90vh;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: auto;
-        gap: 3%;
+    #features .ftr {
+        padding: 4% 6%;
     }
     #features .ftr-img-l{
         flex-direction: row-reverse;
     }
-    #features .ftr .text-content{
-        width: 30%;
-        margin-bottom: 5%;
+    #features .ftr .text-content,
+    #features .ftr .image-container {
+        width: 40%;
     }
     #features h1{
         font-size: 3.3rem;
@@ -757,7 +771,7 @@ footer .design p{
     }
     #download p{
         font-size: 1.2rem;
-        font-weight: 600;
+        font-weight: 450;
     }
     #download .download-btn .btn img{
         height: 9vh;
@@ -800,7 +814,7 @@ footer .design p{
         font-size: 1.1rem;       
     }
     .navbar-brand img{
-        height: 6.5vh;
+        height: 4.5vh;
     }
 
     /* title */
@@ -843,6 +857,13 @@ footer .design p{
 
 
     /* features */
+    #features .ftr {
+        padding: 4% 8%;
+    }
+    #features .ftr .text-content,
+    #features .ftr .image-container {
+        width: 35%;
+    }
     #features h1{
         font-size: 3.8rem;
         line-height: 3.5rem;
