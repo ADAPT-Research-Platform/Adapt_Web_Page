@@ -24,9 +24,17 @@ body .container p{
 
 
 /* navbar */
+nav.navbar {
+    height: 80px;
+    overflow: hidden;
+}
 nav .nav-link{
     font-size: 1rem;  
     color: #A08030;
+}
+.navbar-title {
+    font-size: 1.8rem;
+    color: #FFFFFF;
 }
 
 /* title */
@@ -318,14 +326,16 @@ footer .design p{
 
 @media only screen and (min-width: 320px) {
     /* navbar */
-    nav .navbar-toggler{
-        font-size: 0.8rem;
-    }
     nav .nav-link{
-        font-size: 0.7rem;       
+        font-size: 0.0rem;
     }
-    .navbar-brand img{
-        height: 3vh;
+    .navbar-title {
+        font-size: 2.6rem;
+    }
+    .navbar-brand img {
+        height: 100%;
+        max-height: 80px; /* Adjust as needed to fit nicely in the navbar */
+        object-fit: contain; /* 🔧 Add this line */
     }
 
     /* title */
@@ -496,15 +506,18 @@ footer .design p{
 /* tab */
 @media only screen and (min-width: 780px){
     /* navbar */
-    nav .navbar-toggler{
-        font-size: 1rem;
-    }
     nav .nav-link{
-        font-size: 0.9rem;       
+        font-size: 1.0rem;
     }
-    .navbar-brand img{
-        height: 5vh;
+    .navbar-brand img {
+        height: 100%;
+        max-height: 80px; /* Adjust as needed to fit nicely in the navbar */
+        object-fit: contain; /* 🔧 Add this line */
     }
+    .navbar-title {
+        font-size: 2.9rem;
+    }
+
     /* title */
     .title{
         flex-direction: row;
@@ -675,6 +688,12 @@ footer .design p{
     }
 }
 
+@media screen and (max-width: 1279px) {
+    .navbar-collapse {
+        display: none !important;
+    }
+}
+
 /* desktop */
 @media only screen and (min-width: 1280px) {
     /* navbar */
@@ -682,10 +701,15 @@ footer .design p{
         font-size: 2rem;
     }
     nav .nav-link{
-        font-size: 1rem;       
+        font-size: 1.1rem;
     }
-    .navbar-brand img{
-        height: 6vh;
+    .navbar-brand img {
+        height: 100%;
+        max-height: 80px; /* Adjust as needed to fit nicely in the navbar */
+        object-fit: contain; /* 🔧 Add this line */
+    }
+    .navbar-title {
+        font-size: 3.2rem;
     }
 
     .title {
@@ -859,6 +883,7 @@ footer .design p{
     .navbar-brand img {
         height: 100%;
         max-height: 80px; /* Adjust as needed to fit nicely in the navbar */
+        object-fit: contain; /* 🔧 Add this line */
     }
     .navbar-title {
         font-size: 3.5rem;
