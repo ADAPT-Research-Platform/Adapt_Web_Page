@@ -26,7 +26,7 @@ body .container p{
 /* navbar */
 nav .nav-link{
     font-size: 1rem;  
-    color: gray;    
+    color: #A08030;
 }
 
 /* title */
@@ -126,7 +126,7 @@ nav .nav-link{
 #features .ftr .text-content,
 #features .ftr .image-container {
     width: 100%;
-    max-width: 500px;
+    max-width: 650px;
     padding: 1rem;
     box-sizing: border-box;
 }
@@ -335,13 +335,13 @@ footer .design p{
         align-items: center;
     }
     .title h1{
-        font-size: 1.5rem;
+        font-size: 2.6rem;
     }
     .title h2{
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
     .title p{
-        font-size: 0.8rem;
+        font-size: 1.0rem;
     }
     .title .image-container{
         display: flex;
@@ -375,6 +375,11 @@ footer .design p{
         height: 6vh;
     }
 
+    /* Study Section */
+    .study {
+        font-size: 1.0rem;
+    }
+
     /* features */
     #features .ftr{
         flex-direction: column;
@@ -387,13 +392,16 @@ footer .design p{
         margin-bottom:5%;
     }
     #features h1{
-        font-size: 2.2rem;
+        font-size: 2.6rem;
     }
     #features h2{
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
     #features p{
-        font-size: 0.8rem;
+        font-size: 1.0rem;
+    }
+    #features ul{
+        font-size: 1.0rem;
     }
     #features .subP{
         font-size: 0.8rem;
@@ -505,10 +513,13 @@ footer .design p{
         padding-top: 7vh; /* Push text below the header */
     }
     .title h1{
-        font-size: 2.5rem;
+        font-size: 2.9rem;
+    }
+    .title h2{
+        font-size: 1.9rem;
     }
     .title p{
-        font-size: 0.9rem;
+        font-size: 1.0rem;
     }
     .title .image-container{
         width: 50%;
@@ -537,6 +548,10 @@ footer .design p{
         height: 7vh;
     } 
 
+    /* Study Section */
+    .study {
+        font-size: 1.0rem;
+    }
 
     /* features */
     #features .ftr {
@@ -547,14 +562,17 @@ footer .design p{
         width: 45%;
     }
     #features h1{
-        font-size: 3rem;
+        font-size: 2.9rem;
         line-height: 2.7rem;
     }
     #features h2{
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
     #features p{
-        font-size: 1rem;
+        font-size: 1.0rem;
+    }
+    #features ul{
+        font-size: 1.0rem;
     }
     #features .subP{
         font-size: 0.8rem;
@@ -679,10 +697,13 @@ footer .design p{
 
     /* title */
     .title h1{
-        font-size: 3.5rem;
+        font-size: 3.2rem;
+    }
+    .title h2{
+        font-size: 2.2rem;
     }
     .title p{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     .title .image-container {
         width: 50%;
@@ -715,6 +736,10 @@ footer .design p{
         margin-top: 5%;
     }
 
+    /* Study Section */
+    .study {
+        font-size: 1.1rem;
+    }
 
     /* features */
     #features .container{
@@ -732,14 +757,17 @@ footer .design p{
         width: 40%;
     }
     #features h1{
-        font-size: 3.3rem;
+        font-size: 3.2rem;
         line-height: 3rem;
     }
     #features h2{
-        font-size: 2.3rem;
+        font-size: 2.2rem;
     }
     #features p{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
+    }
+    #features ul{
+        font-size: 1.1rem;
     }
     #features .subP{
         font-size: 1.1rem;
@@ -826,10 +854,14 @@ footer .design p{
 @media only screen and (min-width: 1440px){
     /* navbar */
     nav .nav-link{
-        font-size: 1.1rem;       
+        font-size: 1.5rem;
     }
-    .navbar-brand img{
-        height: 4.5vh;
+    .navbar-brand img {
+        height: 100%;
+        max-height: 80px; /* Adjust as needed to fit nicely in the navbar */
+    }
+    .navbar-title {
+        font-size: 3.5rem;
     }
 
     /* title */
@@ -842,6 +874,9 @@ footer .design p{
 
     .title h1{
         font-size: 3.5rem;
+    }
+    .title h2{
+        font-size: 2.5rem;
     }
     .title p{
         font-size: 1.3rem;
@@ -870,29 +905,34 @@ footer .design p{
         flex-direction: row;
     }
 
+    /* Study Section */
+    .study {
+        font-size: 1.3rem;
+    }
 
     /* features */
     #features .ftr {
-        padding: 4% 8%;
+        padding: 2% 6%;
     }
-    #features .ftr .text-content{
 
-    }
     #features .ftr .image-container {
-        width: 35%;
+        width: 25%;
     }
     #features h1{
-        font-size: 3.8rem;
+        font-size: 3.5rem;
         line-height: 3.5rem;
     }
     #features h2{
-        font-size: 2.8rem;
+        font-size: 2.5rem;
     }
     #features p{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
+    }
+    #features ul{
+        font-size: 1.3rem;
     }
     #features .subP{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     /* testimonials */
