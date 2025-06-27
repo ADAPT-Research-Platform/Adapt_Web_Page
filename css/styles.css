@@ -129,7 +129,7 @@ nav .nav-link{
 
 #features .ftr-img-l{
     flex-direction: row-reverse;
-    background-color: #e9f38f;      /* here */
+    background-color:#FFE3A4;      /* here */
 }
 #features .ftr .text-content,
 #features .ftr .image-container {
@@ -156,7 +156,7 @@ nav .nav-link{
 #features .ftr-img-l h1,
 #features .ftr-img-l p,
 #features .ftr-img-l .text-content{
-    background-color: #e9f38f;          /*here*/
+    background-color: #FFE3A4;          /*here*/
 }
 
 /* testimonials */
